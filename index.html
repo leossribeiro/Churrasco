@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Churrascômetro</title>
+  </head>
+  <body>
+    <div class="container">
+        
+        <div class="box-calculo">
+          <img src="./assets/churraslogo.png" alt="" />
+          <div class="form">
+            <div class="input-block">
+              <label for="adultos">Quantidade de adultos</label>
+              <input id="adultos" 
+              name="adultos" 
+              type="number" 
+              step="1"
+              min="0"
+              placeholder="Adultos"
+              autocomplete="off"
+              autofocus
+              required>
+            </div>
+            <div class="input-block">
+              <label for="criancas">Quantidade de crianças</label>
+              <input id="criancas" 
+              name="criancas" 
+              type="number" 
+              step="1"
+              min="0"
+              placeholder="Crianças"
+              autocomplete="off"
+              autofocus
+              required>
+            </div>
+            <div class="input-block">
+              <label for="duracao">Duração do churrasco</label>
+              <input id="duracao" 
+              name="duracao" 
+              type="number" 
+              step="1"
+              min="0" 
+              placeholder="Duração (h)"
+              autocomplete="off"
+              autofocus
+              required>
+            </div>
+            <div class="input-block">
+              <button onclick="calcular()">Calcular</button>
+            </div>
+          </div>
+          <div id="resultado"></div>
+          </div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
